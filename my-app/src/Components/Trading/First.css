@@ -1,0 +1,61 @@
+.one{
+    display: flex;
+    flex-direction: row;
+}
+.two{
+    margin-left: 70px;
+    margin-top:20px ;
+    
+
+}
+.three{
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 350px;
+    height: 30px;
+    border: 1px solid rgb(30, 1, 1);
+
+    background-color: aliceblue;
+}
+.four{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.one11{
+margin-top: 20px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: fit-content;
+    height: 50%;
+    background-color: aqua;
+}
+.onee{
+    border: 1px solid black;
+    padding-right: 50px;
+    max-width: fit-content;
+
+    margin-left: 20px;
+    background-color: rgb(20, 20, 210);
+}
+.new{
+    display: flex;
+    flex-direction: row;
+}
+.pic{
+    margin-left: 60px;
+    margin-top: 30px;
+    /* border: 1px solid black;
+    max-height: fit-content;
+    border-radius: 80%; */
+}
+.Text{
+    margin-top: 10px;
+    
+}
+.Text2{
+    margin-top: 30px;
+    /* margin-right: 400px; */
+}

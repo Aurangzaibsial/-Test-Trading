@@ -1,0 +1,19 @@
+body {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 244, 244);
+  }
+  th {
+    border: 1px solid black;
+    
+  }
+  .main {
+    border: 1px solid black;
+    
+  }
+  td {
+    border: 1px solid black;
+    width: 300px;
+  }

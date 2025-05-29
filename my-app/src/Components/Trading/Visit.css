@@ -1,0 +1,15 @@
+.visit1{
+    border-left: 1 px solid red;
+    /* background-color: rgb(4, 48, 48); */
+    color: black;
+}
+.visit2{
+    /* background-color: rgb(4, 48, 48); */
+    padding-right: 30px; 
+    color: black;
+        
+}
+.Graph{
+    margin-top: 30px;
+    margin-left:40px ;
+}

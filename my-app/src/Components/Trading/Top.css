@@ -1,0 +1,19 @@
+.list233{
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-top: 70px;
+    margin-right: 70px;
+}
+.All3{
+    display: flex;
+    margin-left: 200px;
+
+
+   
+}
+.A{
+    /* background-color: orange; */
+    max-width: fit-content;
+    /* margin-left: 200px; */
+    margin-bottom: 200px;
+}

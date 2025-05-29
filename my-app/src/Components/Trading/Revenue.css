@@ -1,0 +1,5 @@
+.sale23{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}

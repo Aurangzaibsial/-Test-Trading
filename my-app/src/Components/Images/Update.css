@@ -1,0 +1,10 @@
+.up1{
+    background-color: brown;
+    /* display: flex; */
+    margin-left: 300px;
+    max-width: fit-content;
+    padding: 50px;
+}
+input{
+    max-width: 200px;
+}

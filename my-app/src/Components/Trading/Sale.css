@@ -1,0 +1,71 @@
+.sale1,.sale2{
+    border: 1px solid red;
+    
+    max-width: fit-content;
+    margin-left: 30px;
+    background-color: rgb(244, 207, 214);
+}
+.sales{
+    display: flex;
+    height: 150px;
+    margin-bottom: 20px;
+}   
+.Today{
+    display: flex;
+}
+.todays{
+    margin-left: 500px;
+    margin-top: 30px;
+}
+.today{
+    margin-left: 30px;
+}
+.Alll{
+    border: 1px solid yellow;
+max-width: fit-content;
+margin-left: 30px;
+background-color: blanchedalmond;
+height: 200px; 
+padding-right: 100px; 
+margin-top: 100px;
+ background-color: brown;
+ }
+.visit2{
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+   
+
+}
+.Graph{
+    border: 1px solid blue;
+    max-width: fit-content;
+}
+.new{
+    display: flex;
+    flex-direction: row;
+}
+.all12{
+    border: 1px solid yellow;
+    max-height: fit-content;
+    background-color: brown;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.All3{
+    border: 1px solid black;
+    max-width: fit-content;
+    margin-right: 50px;
+    background-color: aqua;
+}
+.slidecontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.AA{
+    margin-top: 25px;
+    
+}
