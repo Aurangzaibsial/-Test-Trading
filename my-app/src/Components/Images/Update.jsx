@@ -12,6 +12,15 @@ function AxiosFunction() {
     investment:"",
   });
 
+  const [del, setdel] = useState({
+    id: "",
+    name: "",
+    email: "",
+    phone: "",
+    investment:"",
+  });
+
+
   const getAllUsers = () => {
     axios
       .get("http://localhost:8000/api/user")
@@ -31,6 +40,10 @@ function AxiosFunction() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setPost((prev) => ({ ...prev, [name]: value }));
+  };
+ const handleChange2 = (event) => {
+    const { name, value } = event.target;
+    setdel((prev) => ({ ...prev, [name]: value }));
   };
 
   const postAllUsers = () => {
@@ -76,17 +89,14 @@ function AxiosFunction() {
 
 
   const deleteUser = () => {
-    if (!post.id) {
+    if (!del.id) {
       alert("Please enter an ID to delete");
       return;
     }
 
     axios
-      .delete(`http://localhost:8000/api/user/${post.id}`, {
-        name: post.name,
-        email: post.email,
-        phone: post.phone,
-        investment:post.investment,
+      .delete(`http://localhost:8000/api/user/${del.id}`, {
+       
 
       })
       .then((res) => {
@@ -168,8 +178,8 @@ function AxiosFunction() {
           <input
             type="text"
             name="id"
-            value={post.id}
-            onChange={handleChange}
+            value={del.id}
+            onChange={handleChange2}
             placeholder="Enter user ID to Delete"
           />
         <div>
