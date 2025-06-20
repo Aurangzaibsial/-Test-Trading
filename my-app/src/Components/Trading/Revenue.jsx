@@ -17,6 +17,7 @@ const Revenue = () => {
   
   return (
     <div>
+      
 
 <div className="sale22">
       <p> {sales.price}</p>

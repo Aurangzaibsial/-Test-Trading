@@ -1,30 +1,23 @@
 import React from 'react'
+// import Cards from './Components/Food/Cards'
+import Flex from './Components/Food/Flex76'
+import Cards2 from './Components/Food/Cards2'
+import Navbar1 from './Components/Food/Navbar1'
+import Navbar from './Components/Food/GitFood/Navbar'
+import Newfood from './Components/Food/GitFood'
 
-import Tnavbar from './Components/Trading/Tnavbar'
-import Navbar2 from './Components/Trading/Navbar2'
-import Sale from './Components/Trading/Sale'
-import Flex from './Components/Trading/Flex'
-import Revenue from './Components/Trading/Revenue'
-import Top from './Components/Trading/Top'
-import Graph from './Components/Trading/Graph'
-// import Axiosfunction from './Form'
-// import Form from './Form'
-// import Api from'./Api'
-import Update from './Components/Images/Update'
 
-function App(){
+
+const App = () => {
   return (
     <div>
-  <Tnavbar/>
- 
-  <Flex/>
-
-  <Update/>
- 
-       
+    {/* <Flex/> */}
+      {/* <Cards/> */}
+      {/* <Cards2/> */}
+      <Navbar/>
+      <Newfood/>
     </div>
   )
 }
-
 
 export default App

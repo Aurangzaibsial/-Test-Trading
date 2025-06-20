@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import './Form.css'
 import axios from "axios";
 
 function AxiosFunction() {
@@ -9,6 +9,7 @@ function AxiosFunction() {
     email: "",
     phone: "",
   });
+
   const getAllUsers = () => {
     axios
       .get("http://localhost:8000/api/user")
@@ -20,6 +21,7 @@ function AxiosFunction() {
         console.log(err, "err");
       });
   };
+
   useEffect(() => {
     getAllUsers();
   }, []);
@@ -45,11 +47,21 @@ function AxiosFunction() {
       });
   };
 
+  const deleteUser = (id) => {
+    axios
+      .delete(`http://localhost:8000/api/user/${id}`)
+      .then((res) => {
+        console.log(res, "deleted");
+        getAllUsers();
+      })
+      .catch((err) => {
+        console.log(err, "delete error");
+      });
+  };
+
   return (
     <>
       <div className="form-container">
-       
-
         <div className="input-group">
           <label>Name</label>
           <input
@@ -81,9 +93,20 @@ function AxiosFunction() {
             submit
           </button>
         </div>
+
+        <div className="user-list">
+          {users.map((user) => (
+            <div key={user._id} className="user-item">
+              <p>Name: {user.name}</p>
+              <p>Email: {user.email}</p>
+              <p>Phone: {user.phone}</p>
+              <button onClick={() => deleteUser(user._id)}>Delete</button>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
 }
 
-export default AxiosFunction
+export default AxiosFunction;

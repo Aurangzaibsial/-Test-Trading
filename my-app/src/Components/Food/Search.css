@@ -1,0 +1,16 @@
+.i{
+/* background-color: green; */
+margin-top: 100px;
+margin-left: 350px;
+
+}
+.input1{
+    width: 550px;
+    height: 25px;
+}
+.i{
+    display: flex;
+}
+.inn{
+     height: 45px;
+}
